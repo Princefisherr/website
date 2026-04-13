@@ -10,7 +10,14 @@
     <p>This bird owns this website ⤵️</p>
     <img src="goob.png" alt="Something didn't load. Normalus?" width="175" height="175">
       <p></p>
-      <p>📧: <a href="mailto:contact@prnc.fish">contact@prnc.fish</a></p>
+      <span id="email"></span>
+
+<script>
+  const user = "contact";
+  const domain = "prnc.fish";
+  const el = document.getElementById("email");
+  el.innerHTML = `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
+</script>
       </center>
   </body>
 </html>
