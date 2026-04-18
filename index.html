@@ -6,8 +6,19 @@
 </head>
 
   <body style="background-color:lightcyan;">
-    <div style="float: left;">
-  <iframe src="/sidebar.html" style="border: none; width: 200px;"></iframe>
+  <div style="float: left;" id="sidebar-container"></div>
+
+<div style="margin-left: 220px;">
+  <!-- your page content here -->
+</div>
+
+<script>
+  fetch('/sidebar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('sidebar-container').innerHTML = html;
+    });
+</script>
 </div>
     <center>
     <p>This bird owns this website ⤵️</p>
