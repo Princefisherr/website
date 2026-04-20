@@ -2,15 +2,11 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Princefisherr's site! </title>
-  <link rel="icon" type="image/png" href="goob.png"> <!--waow-->
+  <link rel="icon" type="image/png" href="goob.png">
 </head>
 
-  <body style="background-color:lightcyan;">
+  <body style="background-color:paleturquoise;">
   <div style="float: left;" id="sidebar-container"></div>
-
-<div style="margin-left: 220px;">
-</div>
-
 <script>
   fetch('/sidebar.html')
     .then(res => res.text())
@@ -18,12 +14,15 @@
       document.getElementById('sidebar-container').innerHTML = html;
     });
 </script>
+<div style="margin-right: 15;">
+<table align="right">
+ <tr><td>This bird owns this website ⤵️</td></tr>
+    <tr><td><img align="right" src="goob.png"alt="Something didn't load. Normalus?" width="175" height="175"></td></tr>
+</table>
 </div>
-    <center>
-    <p>This bird owns this website ⤵️</p>
-      <a href="goob.png">
-    <img src="goob.png" alt="Something didn't load. Normalus?" width="175" height="175">
-      </a>
-      </center>
+<center>
+<h1>Welcome to my website!</h1>
+</center>
+Hello there! You've landed into my website. I am working on this as a personal project to learn more about web development and to have my own corner in the internet. This website is going to be very primitive as I work on it, and I will make it look better in the future; but for now, this is my website. I hope you enjoy looking around!
   </body>
 </html>
