@@ -5,8 +5,18 @@
   <link rel="icon" type="image/png" href="goob.png"> <!--waow-->
 </head>
 
-  <body style="background-color:lightcyan;">
-    <div style="float: left;">
-  <iframe src="/sidebar.html" style="border: none; width: 200px;"></iframe>
+  <body style="background-color:paleturquoise;">
+  <div style="float: left;" id="sidebar-container"></div>
+
+<div style="margin-left: 220px;">
+</div>
+
+<script>
+  fetch('/sidebar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('sidebar-container').innerHTML = html;
+    });
+</script>
 </div>
 <p>This is still a work in progress. Check back soon!</p>
